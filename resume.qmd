@@ -1,0 +1,71 @@
+---
+layout: cv
+title: Eli Barker's CV
+---
+# Eli Barker
+Accountant, Computer Programer
+
+<div id="webaddress">
+<a href="elibarker@outlook.com">elibarker@outlook.com</a>
+</div>
+
+
+## Currently
+
+Finishing my Bachelors in accounting and pursuing a path to get a Masters and become a CPA.
+
+### Specialized in
+
+Financial accounting and auditing with an emphasis in data science.
+
+
+### Research interests
+
+Financial Statements, AI, GAAP, Computer Science.
+
+
+## Education
+
+`2019-2024`
+__BYU-I, Rexburg.__
+
+`2025-2026`
+__Universit of Utah, Salt Lake City__
+
+
+## Awards
+
+N/A
+
+
+
+## Publications
+
+<!-- A list is also available [online](http://scholar.google.co.uk/citations?user=LTOTl0YAAAAJ) -->
+
+### Journals
+
+N/A
+
+### Patents
+
+N/A
+
+
+## Occupation
+
+`2024`
+__Forviz Mazars__, Denver, Colorado
+
+- Aduit Intern
+
+`2022-2024`
+__BYU-I__, Rexburg, Idaho
+
+- Financial Accounting Tutor
+
+
+
+<!-- ### Footer
+
+Last updated: May 2013 -->

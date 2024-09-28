@@ -1,0 +1,123 @@
+---
+title: "Client Report - Introduction"
+subtitle: "Course DS 250"
+author: "Eli Barker"
+format:
+  html:
+    self-contained: true
+    page-layout: full
+    title-block-banner: true
+    toc: true
+    toc-depth: 3
+    toc-location: body
+    number-sections: false
+    html-math-method: katex
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+    code-copy: hover
+    code-tools:
+        source: false
+        toggle: true
+        caption: See code
+execute: 
+  warning: false
+    
+---
+
+### Introduction
+
+Today we will be looking at a data set that contains some interesting infromation about penguins to see if we can find any trends!
+
+```{python}
+#| label: libraries
+#| include: false
+import pandas as pd
+import numpy as np
+from palmerpenguins import load_penguins
+from lets_plot import *
+penguins = load_penguins()
+
+LetsPlot.setup_html(isolated_frame=True)
+```
+
+
+## Elevator pitch
+The data shows that as the body mass of a penguin increseas, so does it's flipper length. This infomration can be used to help indentify and characterize different species of penguins.
+
+```{python}
+#| label: project-data
+#| code-summary: Read and format project data
+
+# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
+
+# Include and execute your code here
+df = pd.read_csv("https://raw.githubusercontent.com/byuidatascience/data4python4ds/master/data-raw/mpg/mpg.csv")
+```
+
+__Highlight the Questions and Tasks__
+
+## Question|Task 1
+
+__COPY PASTE QUESTION|TASK 1 FROM THE PROJECT HERE__
+
+- The data that will be looked at relates to Penguins and looking for trends that occur. In particular we will be looking at the body mass and flipper length to see if there is any correlation to species.
+
+
+```{python}
+#| label: Q1
+#| code-summary: Read and format data
+# Include and execute your code here
+
+
+```
+
+## Question|Task 2
+
+__Penuins Chart__
+
+- As you can see, as the body mass of a penguin increseas, so does it's flipper length. We can see that the Gentoo species has both the largest body mass and flipper length.
+
+```{python}
+#| label: Q1-chart
+#| code-summary: plot example
+#| fig-cap: "My useless chart"
+#| fig-align: center
+# Include and execute your code here
+
+
+(
+    ggplot(data=penguins, mapping=aes(x="flipper_length_mm", y="body_mass_g"))
+    + geom_point(aes(color="species", shape="species"))
+    + geom_smooth(method="lm")
+    + labs(
+        title="Body mass and flipper length",
+        subtitle="Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+        x="Flipper length (mm)",
+        y="Body mass (g)",
+        color="Species",
+        shape="Species",
+    )
+)
+```
+
+## Question|Task 3
+
+__Penuin Data Table__
+
+-Here is the data table that has the information about Penguins. This is the data that was used for the previous chart
+
+```{python}
+#| label: Q1-table
+#| code-summary: table example
+#| tbl-cap: "table example"
+#| tbl-cap-location: top
+# Include and execute your code here
+penguins
+
+```
+
+
+Note: Non executing Python `Snippets` include (3) \`\`\` followed by (3) more \`\`\`, each on their own line. These are not single quotes, they are the key left of the number 1 key on the keyboard. The top row can include the language of code that is pasted inbetween the \`\`\`  marks. 
+
+Note: These also work in `Slack` and it is expected they are used for any code shared in that app. No screen shots allowed.
