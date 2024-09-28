@@ -1,1 +1,1 @@
-Sitemap: https://byuidatascience.github.io/course_work_portfolio/sitemap.xml
+Sitemap: https://ebark24.github.io/DS250/sitemap.xml
